@@ -1,24 +1,16 @@
 // @flow
-import * as React from "react"
 import type { Animal } from "./types"
-import type { ReduxAction } from "types/Redux"
 
-type AnimalActionType = "ADD_ANIMAL" | "REMOVE_ANIMAL"
-
-type AddAnimalAction = ReduxAction<AnimalActionType, "ADD_ANIMAL", *>
-export const addAnimal = (animal: Animal): AddAnimalAction => ({
-  type: "ADD_ANIMAL",
-  payload: {
-    animal,
-  },
+type AddAnimal = { type: "ADD_ANIMAL", payload: Animal }
+export const addAnimal = (x: Animal): AddAnimal => ({
+  type: ("ADD_ANIMAL": "ADD_ANIMAL"),
+  payload: x,
 })
 
-type RemoveAnimalAction = ReduxAction<AnimalActionType, "REMOVE_ANIMAL", *>
-export const removeAnimal = (id: number): RemoveAnimalAction => ({
+type RemoveAnimal = { type: "REMOVE_ANIMAL", payload: number }
+export const removeAnimal = (id: number): RemoveAnimal => ({
   type: "REMOVE_ANIMAL",
-  payload: {
-    id,
-  },
+  payload: id,
 })
 
-export type AnimalAction = AddAnimalAction | RemoveAnimalAction
+export type AnimalAction = AddAnimal | RemoveAnimal

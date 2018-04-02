@@ -1,6 +1,8 @@
+// @flow
 import React, { Component } from "react"
-import AnimalList from "../AnimalList"
+import AnimalList from "../AnimalList/index0"
 import BookList from "../BookList"
+import dummyData from "data/animal/dummyData"
 
 const App = () => (
   <div>

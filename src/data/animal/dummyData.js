@@ -7,3 +7,5 @@ const dummyData: Animal[] = [
   { id: 2, name: "Crocodile" },
   { id: 3, name: "Monkey" },
 ]
+
+export default dummyData

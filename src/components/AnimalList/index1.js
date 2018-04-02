@@ -1,8 +1,9 @@
 // @flow
-import React, { Component } from "react"
-import { connect } from "react-redux"
+
+// Simple stateless component using Flow instead of PropTypes
+
+import React from "react"
 import type { Animal } from "data/animal/types"
-import { selectAnimals } from "data/animal/selectors"
 
 type Props = {
   animals: Animal[],
@@ -21,8 +22,4 @@ const AnimalList = ({ animals }: Props) => (
   </div>
 )
 
-const mapStateToProps = state => ({
-  animals: selectAnimals(state),
-})
-
-export default connect(mapStateToProps)(AnimalList)
+export default AnimalList

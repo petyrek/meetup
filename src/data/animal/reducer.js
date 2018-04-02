@@ -13,17 +13,19 @@ const initialState: AnimalReducerState = {
   loading: false,
 }
 
-type Reducer = (AnimalReducerState, AnimalAction) => AnimalReducerState
-const reducer: Reducer = (state = initialState, action) => {
+function reducer(
+  state: AnimalReducerState = initialState,
+  action: AnimalAction,
+) {
   switch (action.type) {
     case "ADD_ANIMAL":
       return {
-        data: state.data.concat(action.payload.animal),
+        data: state.data.concat(action.payload),
         ...state,
       }
     case "REMOVE_ANIMAL":
       return {
-        data: state.data.filter(x => x.id !== action.payload.id),
+        data: state.data.filter(x => x.id !== action.payload),
         ...state,
       }
     default:
