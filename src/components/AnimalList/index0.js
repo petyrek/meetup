@@ -1,8 +1,7 @@
 // Simple stateless component using PropTypes
 
-import PropTypes from "prop-types"
 import React from "react"
-import type { Animal } from "data/animal/types"
+import PropTypes from "prop-types"
 
 const AnimalList = ({ animals }) => (
   <div>

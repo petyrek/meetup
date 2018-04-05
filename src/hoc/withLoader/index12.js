@@ -1,6 +1,6 @@
 // @flow
 
-// the least verbose way that doesn't ask for params
+// the least verbose way with predefined predicate function
 
 import * as React from "react"
 import { branch, renderComponent, type HOC } from "recompose"

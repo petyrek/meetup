@@ -23,11 +23,12 @@ class AnimalList extends React.Component<Props, State> {
 
   render() {
     const { animals } = this.props
+    const { open } = this.state
 
     return (
       <div>
         <h2>Animal list</h2>
-        {this.state.open && (
+        {open && (
           <ul>
             {animals.map(x => (
               <li>
