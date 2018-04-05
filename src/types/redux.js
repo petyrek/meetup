@@ -1,4 +1,4 @@
 // @flow
 import type { ReducersState } from "../reducers"
 
-export type Selector = ReducersState => *
+export type Selector<T> = ReducersState => T

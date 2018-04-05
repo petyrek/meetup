@@ -3,7 +3,7 @@ import type { Animal } from "./types"
 
 type AddAnimal = { type: "ADD_ANIMAL", payload: Animal }
 export const addAnimal = (x: Animal): AddAnimal => ({
-  type: ("ADD_ANIMAL": "ADD_ANIMAL"),
+  type: "ADD_ANIMAL",
   payload: x,
 })
 
