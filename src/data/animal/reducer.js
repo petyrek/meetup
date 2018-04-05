@@ -1,22 +1,11 @@
-// @flow
-import type { Animal } from "./types"
-import type { AnimalAction } from "./actions"
 import dummyData from "./dummyData"
 
-export type AnimalReducerState = {
-  data: Animal[],
-  loading: boolean,
-}
-
-const initialState: AnimalReducerState = {
+const initialState = {
   data: dummyData,
   loading: false,
 }
 
-function reducer(
-  state: AnimalReducerState = initialState,
-  action: AnimalAction,
-) {
+function reducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_ANIMAL":
       return {

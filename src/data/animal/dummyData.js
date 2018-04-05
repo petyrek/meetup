@@ -1,7 +1,4 @@
-// @flow
-import type { Animal } from "./types"
-
-const dummyData: Animal[] = [
+const dummyData = [
   { id: 0, name: "Tiger" },
   { id: 1, name: "Lion" },
   { id: 2, name: "Crocodile" },

@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from "react"
-import AnimalList from "../AnimalList/index0"
+import AnimalList from "../AnimalList"
 import BookList from "../BookList"
 import dummyData from "data/animal/dummyData"
 
