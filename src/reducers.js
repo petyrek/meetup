@@ -1,7 +1,5 @@
 // @flow
 import animalReducer, { type AnimalReducerState } from "./data/animal/reducer"
-import { removeAnimal } from "./data/animal/actions"
-import { type Animal } from "./data/animal/types"
 import bookReducer, { type BookReducerState } from "./data/book/reducer"
 
 const reducers = {
