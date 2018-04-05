@@ -23,11 +23,13 @@ function reducer(
         data: state.data.concat(action.payload),
         ...state,
       }
-    case "REMOVE_ANIMAL":
+    case "REMOVE_ANIMAL": {
+      const { payload } = action
       return {
-        data: state.data.filter(x => x.id !== action.payload),
+        data: state.data.filter(x => x.id !== payload),
         ...state,
       }
+    }
     default:
       return state
   }
